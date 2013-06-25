@@ -50,7 +50,7 @@ static IntMap& badWords() {
   return *bad;
 }
 
-static IntMap* freqs = new IntMap(10 * 1000 * 1000);
+static IntMap* freqs = new IntMap();
 
 class BZ2Reader {
 private:

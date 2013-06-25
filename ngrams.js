@@ -2,7 +2,7 @@ var util = require('util');
 var process = require('child_process');
 var fs = require('fs');
 
-var bz = process.spawn('bzcat', ['/scratch/enwiki-latest-pages-articles.xml.bz2']);
+var bz = process.spawn('bzcat', ['./pages.xml.bz2']);
 var reTitle = /<title>([^<]+)/;
 var reText = /<text[^>]+>([^<]+)/;
 var reTextSplit = /<\/text>/;
